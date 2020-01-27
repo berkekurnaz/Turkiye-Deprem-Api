@@ -1,11 +1,11 @@
 # Türkiye Deprem Api
 Türkiye'de gerçekleşen son 500 deprem bilgisinin Kandilli Rasathanesi'nin internet sitesinden çekilerek oluşturulmuş rest api servisidir. Veriler json formatında çıktı olarak alınabilir ve üzerlerinde bütün filtreleme işlemleri uygulanabilir. <br/>
 
-> **INTERNET SITESI :** www.testsite.heroku.app
+> **INTERNET SITESI :** https://turkiyedepremapi.herokuapp.com/
 
 Filteleme özellikleri: başlangıç ve bitiş tarihi, başlangıç ve bitiş saati, enlem aralığı, boylam aralığı, derinlik, buyukluk ve şehir. <br/>
 
-> **HIZLI KULLANIM :** www.testsite.heroku.app/api
+> **HIZLI KULLANIM :** https://turkiyedepremapi.herokuapp.com/api
 
 ## Api Kullanım
 |   Api Adres      | Açıklama   | 
@@ -21,7 +21,7 @@ Filteleme özellikleri: başlangıç ve bitiş tarihi, başlangıç ve bitiş sa
 | /api?baslangic=2020.01.26&bitis=2020.01.27 | Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz iki tarih arasına göre depremleri getirir.      |
 
 ## Uygulama Görüntüsü
-Resim-1
+![Resim1](https://i.resimyukle.xyz/JGUOCb.png) <br/>
 
 ## Local Bilgisayarda Kurulum
 1-) Depoyu Yerel Bilgisayarınıza İndirin. 
