@@ -29,7 +29,8 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">Türkiye Son Depremler</span>
             <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="http://www.advanceuk.org/uploaded_files/1365/images/generic-home-scheme-logo.png" alt="">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="http://www.advanceuk.org/uploaded_files/1365/images/generic-home-scheme-logo.png"
+                    alt="">
             </span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -81,16 +82,16 @@
                     <b>Hızlı Kullanım :</b> www.testsite.heroku.app/api
                 </p>
                 <div class="social-icons">
-                    <a href="#">
+                    <a href="https://github.com/berkekurnaz/Turkiye-Deprem-Api">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/berkekurnaz/Turkiye-Deprem-Api">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/berkekurnaz/Turkiye-Deprem-Api">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/berkekurnaz/Turkiye-Deprem-Api">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </div>
@@ -119,17 +120,117 @@
 
                 <!-- API KULLANIM -->
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="resume-content">
-                            <h5 class="mb-0">HIZLI KULLANIM - SON 500 DEPREM BİLGİSİ</h5>
-                            <div class="mb-3"><b>Url : </b>/api</div>
-                            <p>
-                                Türkiye'de gerçekleşen son 500 deprem bilgisini getirir.
-                            </p>
-                        </div>
-                        <div class="resume-date text-md-right">
-                            <span class="text-primary">Endpoint - 1</span>
-                        </div>
+                    <div class="resume-content">
+                        <h5 class="mb-0">BÜYÜKLÜĞÜNE GÖRE DEPREM FİLTRELEME</h5>
+                        <div class="mb-3"><b>Url : </b>/api?min=4.2&max=5.0</div>
+                        <p>
+                            Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz mininum ve maximum büyüklüğe göre depremleri getirir.
+                        </p>
                     </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Endpoint - 2</span>
+                    </div>
+                </div>
+
+                <!-- API KULLANIM -->
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h5 class="mb-0">TARİHE GÖRE DEPREM FİLTRELEME</h5>
+                        <div class="mb-3"><b>Url : </b>/api?tarih=2020.01.26</div>
+                        <p>
+                            Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz tarihte
+                            gerçekleşen depremleri getirir.
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Endpoint - 3</span>
+                    </div>
+                </div>
+
+                <!-- API KULLANIM -->
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h5 class="mb-0">SAAT ARALIĞINA GÖRE DEPREM FİLTRELEME</h5>
+                        <div class="mb-3"><b>Url : </b>/api?minsaat=16:48:00&maxsaat=17:55:00</div>
+                        <p>
+                            Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz başlangıç ve bitiş saatlerine göre depremleri getirir.
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Endpoint - 4</span>
+                    </div>
+                </div>
+
+
+                <!-- API KULLANIM -->
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h5 class="mb-0">ŞEHRE GÖRE DEPREM FİLTRELEME</h5>
+                        <div class="mb-3"><b>Url : </b>/api?sehir=(BALIKESIR)</div>
+                        <p>
+                            Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz şehre göre depremleri getirir.
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Endpoint - 5</span>
+                    </div>
+                </div>
+
+                <!-- API KULLANIM -->
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h5 class="mb-0">DERİNLİĞE GÖRE DEPREM FİLTRELEME</h5>
+                        <div class="mb-3"><b>Url : </b>/api?minderinlik=12.5&maxderinlik=15</div>
+                        <p>
+                            Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz mininum ve maximum derinliğe göre depremleri getirir.
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Endpoint - 6</span>
+                    </div>
+                </div>
+
+                <!-- API KULLANIM -->
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h5 class="mb-0">ENLEM ARALIĞINA GÖRE DEPREM FİLTRELEME</h5>
+                        <div class="mb-3"><b>Url : </b>/api?minenlem=36.14&maxenlem=38.68</div>
+                        <p>
+                            Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz enlem aralığına göre depremleri getirir.
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Endpoint - 7</span>
+                    </div>
+                </div>
+
+                <!-- API KULLANIM -->
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h5 class="mb-0">BOYLAM ARALIĞINA GÖRE DEPREM FİLTRELEME</h5>
+                        <div class="mb-3"><b>Url : </b>/api?minboylam=36.14&boylam=38.68</div>
+                        <p>
+                            Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz boylam aralığına göre depremleri getirir.
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Endpoint - 8</span>
+                    </div>
+                </div>
+
+                <!-- API KULLANIM -->
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h5 class="mb-0">İKİ TARİH ARASINA GÖRE DEPREM FİLTRELEME</h5>
+                        <div class="mb-3"><b>Url : </b>/api?baslangic=2020.01.26&bitis=2020.01.27</div>
+                        <p>
+                            Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz iki tarih arasına göre depremleri getirir.
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">Endpoint - 9</span>
+                    </div>
+                </div>
 
             </div>
 
@@ -141,7 +242,8 @@
             <div class="w-100">
                 <h2 class="mb-5">ÖRNEKLER</h2>
 
-                <p>Bu Kısımda Bu Servis Kullanılarak Geliştirilmiş Örnek Uygulamalar Paylaşılacaktır. Eklenmesi planlanan örnekler bir web uygulaması ve bir mobil uygulamadır.</p>
+                <p>Bu Kısımda Bu Servis Kullanılarak Geliştirilmiş Örnek Uygulamalar Paylaşılacaktır. Eklenmesi
+                    planlanan örnekler bir web uygulaması ve bir mobil uygulamadır.</p>
                 <br>
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="resume-content">
@@ -208,16 +310,13 @@
                 <ul class="fa-ul mb-0">
                     <li>
                         <i class="fa-li fa fa-check"></i>
-                        Mobile-First, Responsive Design</li>
+                        Kandilli Rasathanesi İnternet Sitesinden Veriler Çekildi.</li>
                     <li>
                         <i class="fa-li fa fa-check"></i>
-                        Cross Browser Testing &amp; Debugging</li>
+                        Cheerio Kütüphanesi İle Gelen Veriler Alındı Ve Ardından Ayrıştırma İşlemi Yapıldı.</li>
                     <li>
                         <i class="fa-li fa fa-check"></i>
-                        Cross Functional Teams</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Agile Development &amp; Scrum</li>
+                        Express.Js Framework'ü İle Rest Api Oluşturulup Veriler Paylaşıldı.</li>
                 </ul>
             </div>
         </section>
@@ -228,7 +327,8 @@
             <div class="w-100">
                 <h2 class="mb-5">VERİ KAYNAĞI</h2>
                 <p>
-                    Veriler BOĞAZİÇİ ÜNİVERSİTESİ KANDİLLİ RASATHANESİ VE DEPREM ARAŞTIRMA ENSTİTÜSÜ internet sitesi üzerinden sağlanmaktadır.
+                    Veriler BOĞAZİÇİ ÜNİVERSİTESİ KANDİLLİ RASATHANESİ VE DEPREM ARAŞTIRMA ENSTİTÜSÜ internet sitesi
+                    üzerinden sağlanmaktadır.
                 </p>
                 <p class="mb-0">
                     Verilerin Orijinal İnternet Sitesi Adresi İçin : <a href="http://www.koeri.boun.edu.tr/scripts/lst0.asp">http://www.koeri.boun.edu.tr/scripts/lst0.asp</a>
