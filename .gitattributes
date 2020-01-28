@@ -1,1 +1,3 @@
 linguist-language=JavaScript
+*.HTML linguist-vendored=false
+*.html linguist-vendored=false
