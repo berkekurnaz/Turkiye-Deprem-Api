@@ -106,6 +106,15 @@ app.get('/api', function (req, res) {
                 var buyukluk = depremBilgi[6];
                 var yer = depremBilgi[8];
                 var sehir = depremBilgi[9];
+                if(sehir != null){
+                    if(depremBilgi[9].includes("(")){
+                        sehir = depremBilgi[9];
+                    }else{
+                        sehir = "";
+                    }
+                }else{
+                    sehir = "";
+                }
 
                 var deprem = new Deprem(tarih, saat, enlem, boylam, derinlik, buyukluk, yer, sehir);
                 depremler.push(deprem);
