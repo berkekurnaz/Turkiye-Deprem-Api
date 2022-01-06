@@ -1,6 +1,7 @@
 var app = require('express')();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
+const cors = require('cors');
 
 var ejs = require('ejs');
 
@@ -22,6 +23,7 @@ class Deprem {
 
 app.engine('.ejs', ejs.__express);
 app.set('views', __dirname + '/views/');
+app.use(cors());
 
 async function getirDepremler() {
     var depremler = [];
